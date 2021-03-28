@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbpvNextDemo", "AbpvNextDemo\AbpvNextDemo.csproj", "{C44D8CEA-D54E-4C89-84D5-760192EBFBB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpvNextDemo", "AbpvNextDemo\AbpvNextDemo.csproj", "{C44D8CEA-D54E-4C89-84D5-760192EBFBB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbpvNextEntityFrameworkCore", "AbpvNextEntityFrameworkCore\AbpvNextEntityFrameworkCore.csproj", "{A6CD6520-1A3A-4432-ADB0-15C2544FEB95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpvNextEntityFrameworkCore", "AbpvNextEntityFrameworkCore\AbpvNextEntityFrameworkCore.csproj", "{A6CD6520-1A3A-4432-ADB0-15C2544FEB95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbpvNext.Domain", "AbpvNext.Domain\AbpvNext.Domain.csproj", "{52CE4B86-5129-450A-BE49-70009544CE43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpvNext.Domain", "AbpvNext.Domain\AbpvNext.Domain.csproj", "{52CE4B86-5129-450A-BE49-70009544CE43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbpvNext.Application", "AbpvNext.Application\AbpvNext.Application.csproj", "{6BB52C8F-EDE8-4F54-A100-AB0D0C24242B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpvNext.Application", "AbpvNext.Application\AbpvNext.Application.csproj", "{6BB52C8F-EDE8-4F54-A100-AB0D0C24242B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbpvNextFilters", "AbpvNextFilters\AbpvNextFilters.csproj", "{11F857C5-2A87-400C-BCB7-CD6814BCB68B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6BB52C8F-EDE8-4F54-A100-AB0D0C24242B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BB52C8F-EDE8-4F54-A100-AB0D0C24242B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BB52C8F-EDE8-4F54-A100-AB0D0C24242B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F857C5-2A87-400C-BCB7-CD6814BCB68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F857C5-2A87-400C-BCB7-CD6814BCB68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F857C5-2A87-400C-BCB7-CD6814BCB68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F857C5-2A87-400C-BCB7-CD6814BCB68B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

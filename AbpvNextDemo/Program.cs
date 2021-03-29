@@ -20,7 +20,7 @@ namespace AbpvNextDemo
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>().UseUrls("http://*:7500");
                 }).UseAutofac();
     }
 }

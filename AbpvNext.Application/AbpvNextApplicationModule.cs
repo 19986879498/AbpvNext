@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbpvNextEntityFrameworkCore;
+using System;
 using Volo.Abp.Application;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
@@ -7,7 +8,8 @@ namespace AbpvNext.Application
 {
     [DependsOn(
         typeof(AbpDddApplicationModule),
-        typeof(AbpAutoMapperModule)
+        typeof(AbpAutoMapperModule),
+         typeof(AbpvNextEntityFrameworkCoreModule)
         )]
     public class AbpvNextApplicationModule:AbpModule
     {

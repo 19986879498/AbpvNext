@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbpvNext.Application\AbpvNext.Application.csproj" />
     <ProjectReference Include="..\AbpvNextEntityFrameworkCore\AbpvNextEntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\AbpvNextFilters\AbpvNextFilters.csproj" />
   </ItemGroup>
 
 </Project>

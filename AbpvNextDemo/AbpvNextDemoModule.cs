@@ -1,5 +1,7 @@
-﻿using AbpvNext.Application.My;
+﻿using AbpvNext.Application;
+using AbpvNext.Application.My;
 using AbpvNextEntityFrameworkCore;
+using AbpvNextFilters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -18,14 +20,14 @@ namespace AbpvNextDemo
     [DependsOn(
         typeof(AbpAspNetCoreModule),
         typeof(AbpAutofacModule),
-        typeof(AbpvNextEntityFrameworkCoreModule)
+       typeof(AbpvNextApplicationModule),
+        typeof(AbpvNextFiltersModule)
         )]
     public class AbpvNextDemoModule:AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             var services = context.Services;
-            services.AddControllersWithViews();
             services.AddSingleton<IMyService,MyService>();
             services.AddSwaggerGen(c =>
             {
@@ -41,11 +43,12 @@ namespace AbpvNextDemo
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AbpvNextDemo v1"));
+                
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AbpvNextDemo v1"));
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

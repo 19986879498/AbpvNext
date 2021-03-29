@@ -14,7 +14,8 @@ namespace AbpvNextFilters
         {
             context.Services.AddControllersWithViews(opt=> {
                 opt.Filters.Add<AbpvNextExceptionFilterAttribute>();
-            });
+            }).AddNewtonsoftJson();
+            context.Services.AddSingleton<AbpvNextExceptionFilterAttribute>();
             base.ConfigureServices(context);
         }
     }
